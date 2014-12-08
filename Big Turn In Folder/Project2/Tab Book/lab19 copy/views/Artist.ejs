@@ -13,7 +13,7 @@
     <h2>Bio: <a href="<%= rs[0].Biography %>"><%= rs[0].Biography %></a></h2>
 </head>
 
-<% if (rs[0].Song_Name === 'undefined'){%>
+
     <table>
 
         <tr><th>Stars</th>
@@ -29,10 +29,6 @@
             </tr>
             <% } %>
     </table>
-<% } else { %>
-    No Songs to show
-<% } %>
-<% include footer %>
 <!--
 <table id="login">
 

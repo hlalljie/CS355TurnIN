@@ -36,11 +36,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab19 copy/views/about.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27415144" vertical-offset="60" max-vertical-offset="525">
+            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="525">
               <caret line="11" column="105" selection-start-line="11" selection-start-column="105" selection-end-line="11" selection-end-column="105" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Artists.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab19 copy/views/Artists.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="495">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Artist.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lab19 copy/views/Artist.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.97911227" vertical-offset="75" max-vertical-offset="765">
+              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -98,31 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddArtist.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab19 copy/views/AddArtist.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="465">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Album.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab19 copy/views/Album.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.625" vertical-offset="45" max-vertical-offset="705">
               <caret line="4" column="8" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab19 copy/views/footer.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="345">
-              <caret line="1" column="39" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -147,13 +147,13 @@
         <option value="$PROJECT_DIR$/lab19 copy/views/Tabs.ejs" />
         <option value="$PROJECT_DIR$/lab19 copy/views/AddArtist.ejs" />
         <option value="$PROJECT_DIR$/lab19 copy/models/db.js" />
-        <option value="$PROJECT_DIR$/lab19 copy/views/Artist.ejs" />
         <option value="$PROJECT_DIR$/lab19 copy/views/header.ejs" />
         <option value="$PROJECT_DIR$/lab19 copy/controller/tabbook.js" />
         <option value="$PROJECT_DIR$/lab19 copy/views/footer.ejs" />
         <option value="$PROJECT_DIR$/lab19 copy/views/Title.ejs" />
         <option value="$PROJECT_DIR$/lab19 copy/views/index.ejs" />
         <option value="$PROJECT_DIR$/lab19 copy/views/about.ejs" />
+        <option value="$PROJECT_DIR$/lab19 copy/views/Artist.ejs" />
       </list>
     </option>
   </component>
@@ -360,7 +360,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="22" width="732" height="717" extended-state="1" />
+    <frame x="1" y="22" width="732" height="717" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -449,14 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab19 copy/views/Artists.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.7916667" vertical-offset="112" max-vertical-offset="495">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab19 copy/models/db.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="988" max-vertical-offset="2820">
@@ -476,14 +468,6 @@
     <entry file="file://$PROJECT_DIR$/lab19 copy/views/cover.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab19 copy/views/Artist.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="825">
-          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab19 copy/views/Albums.ejs">
@@ -580,8 +564,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab19 copy/views/about.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27415144" vertical-offset="60" max-vertical-offset="525">
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="525">
           <caret line="11" column="105" selection-start-line="11" selection-start-column="105" selection-end-line="11" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab19 copy/views/Artists.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="495">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab19 copy/views/Artist.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.97911227" vertical-offset="75" max-vertical-offset="765">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
           <folding />
         </state>
       </provider>
