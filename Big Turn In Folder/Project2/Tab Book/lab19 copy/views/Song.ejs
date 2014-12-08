@@ -1,0 +1,32 @@
+<% include header %>
+
+<style>
+    h1 {text-align: center;}
+</style>
+
+<head><h1><%= rs[0].Song_Name %> by
+        <a href="/tabbook/Artist/?Artist=<%= rs[0].ArtistName %>"><%= rs[0].ArtistName %></a>, (<%= rs[0].Rating %>/10)<br>
+        From: <a href="/tabbook/Album/?Album=<%= rs[0].AlbumName %>&Artist=<%= rs[0].ArtistName %>"><%= rs[0].AlbumName %></a></h1>
+</head>
+
+<table>
+
+    <tr><th>Link</th>
+        <th>Type</th>
+        <th>Rating</th>
+        <th>Difficulty</th>
+        <th>Description</th>
+    </tr>
+    <% for (var i=0; rs.length > i; i++) { %>
+    <tr>
+        <td> <a href="<%= rs[i].MLink %>"><%= rs[i].MLink %></td>
+        <td><%= rs[i].Music_Type %></td>
+        <td><%= rs[i].MRating %></td>
+        <td><%= rs[i].Difficulty %>/10</td>
+        <td><%= rs[i].Description %></td>
+    </tr>
+    <% } %>
+
+</table>
+
+<% include footer %>

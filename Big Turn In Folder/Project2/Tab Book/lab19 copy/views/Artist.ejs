@@ -1,0 +1,49 @@
+<% include header %>
+
+<style>
+    h1 {text-align: center;}
+    h2 {text-align: center;}
+</style>
+<head><h1><%= rs[0].Artist_Name %>,
+        <%= rs[0].Years %> <br>
+        Rated: <%= rs[0].Rating %>/10
+        </h1>
+
+    <h2>Members: <%= rs[0].Members %></h2>
+    <h2>Bio: <a href="<%= rs[0].Biography %>"><%= rs[0].Biography %></a></h2>
+</head>
+
+<% if (rs[0].Song_Name === 'undefined'){%>
+    <table>
+
+        <tr><th>Stars</th>
+            <th>Song</th>
+            <th>Album</th>
+        </tr>
+
+            <% for (var i=0; rs.length > i; i++) { %>
+            <tr>
+                <td><%= rs[i].Rating %></td>
+                <td><a href="/tabbook/Song/?Song=<%= rs[i].Song_Name %>&Artist=<%= rs[i].Artist_Name %>&Album=<%= rs[i].AlbumName %>"> <%= rs[i].Song_Name %></td>
+                <td><a href="/tabbook/Album/?Album=<%= rs[i].AlbumName %>&Artist=<%= rs[i].Artist_Name %>"> <%= rs[i].AlbumName %></td>
+            </tr>
+            <% } %>
+    </table>
+<% } else { %>
+    No Songs to show
+<% } %>
+<% include footer %>
+<!--
+<table id="login">
+
+    <tr><th>Stars</th>
+        <th>Artist</th>
+        <th>Members</th>
+        <th>Album</th>
+        <th>Bio</th>
+    </tr>
+    <tr>
+
+    </tr>
+</table>
+-->

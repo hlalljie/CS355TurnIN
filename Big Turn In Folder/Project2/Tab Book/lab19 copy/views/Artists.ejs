@@ -1,0 +1,27 @@
+<% include header %>
+
+<style>
+    h1 {text-align: center;}
+</style>
+
+<head><h1>Artists</h1></head>
+<table id="login">
+
+    <tr><th>Stars</th>
+        <th>Artist</th>
+        <th>Members</th>
+        <th>Years Active</th>
+        <th>Bio</th>
+    </tr>
+    <% for (var i=0; rs.length > i; i++) { %>
+    <tr>
+        <td><%= rs[i].Rating %></td>
+        <td><a href="/tabbook/Artist/?Artist=<%= rs[i].Artist_Name %>"> <%= rs[i].Artist_Name %></td>
+        <td><%= rs[i].Members %></td>
+        <td><%= rs[i].Years %></td>
+        <td><a href="<%= rs[i].Biography %>"><%= rs[i].Biography %></a></td>
+    </tr>
+    <% } %>
+</table>
+
+<% include footer %>

@@ -1,0 +1,55 @@
+
+<body style ="background-image:url(http://i241.photobucket.com/albums/ff280/fireballjim23/pageleft_blank.jpg)">
+
+<style>
+    h1 {text-align: center;}
+    h3 {text-align: center;}
+    h4 {
+        padding-top: 0px;
+        padding-right: 50px;
+        padding-bottom: 0px;
+        padding-left: 50px;
+    }
+
+</style>
+
+
+
+<head>
+    <h1>Tab Book</h1>
+    <h3>Welcome to Tab Book Your Electronic Book Of Tabs
+</head>
+
+<h4>
+    <br>
+    <a href="/tabbook/Songs">Songs</a>
+
+    <br>
+    <br>
+    <% if(a.length > 0) { %>
+    <form method="post" action="/tabbook/ArtistView">
+        <label for="Artist"><a href="/tabbook/Artists">Artists</a></label>
+        <select id="Artist" name="Artist">
+            <% for (var i=0; a.length > i; i++) { %>
+            <option value="<%= a[i].Artist_Name %>">
+                <%= a[i].Artist_Name %>
+            </option>
+            <% } %>
+        </select>
+        <input type="submit">
+    </form>
+    <% } else { %>
+    No Artists
+    <% } %>
+    <a href="/tabbook/Albums">Albums</a>
+    <br>
+    <br>
+    <a href="/tabbook/Tabs">Tabs</a>
+    <br>
+    <br>
+    <a href="/tabbook/Audio">Audio</a>
+</h4>
+
+
+
+<% var hideBackLink = true; %>

@@ -1,0 +1,17 @@
+<% include header %>
+
+
+   <% if(rs.length > 0) { %>
+    <table>
+        <tr> <th>ID</th> <th>Email</th> <th>User Name</th> <th>Password</th> </tr>
+            <tr>
+             <td> <%= rs[0].AccountID %> </td>
+             <td> <%= rs[0].Email %> </td>
+             <td> <%= rs[0].User_Name %> </td>
+             <td> <%= rs[0].Password %> </td>
+    </table>
+    <% } else { %>
+         No users are entered into the database.
+    <% } %>
+
+<% include footer %>

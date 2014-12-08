@@ -1,0 +1,33 @@
+<% include header %>
+
+<style>
+    h1 {text-align: center;}
+</style>
+
+<head><h1>Tabs</h1></head>
+<table id="login">
+
+    <tr><th>Stars</th>
+        <th>Song</th>
+        <th>Artist</th>
+        <th>Album</th>
+        <th>Tab</th>
+        <th>Type</th>
+        <th>Difficulty</th>
+        <th>Description</th>
+    </tr>
+    <% for (var i=0; rs.length > i; i++) { %>
+    <tr>
+        <td><%= rs[i].Rating %></td>
+        <td><a href="/tabbook/Song/?Song=<%= rs[i].SongName %>&Artist=<%= rs[i].ArtistName %>&Album=<%= rs[i].AlbumName %>"> <%= rs[i].SongName %></td>
+        <td><a href="/tabbook/Artist/?Artist=<%= rs[i].ArtistName %>"> <%= rs[i].ArtistName %></td>
+        <td><a href="/tabbook/Album/?Album=<%= rs[i].AlbumName %>&Artist=<%= rs[i].ArtistName %>"> <%= rs[i].AlbumName %></td>
+        <td><a href="<%= rs[i].Link %>"><%= rs[i].Link %></a></td>
+        <td><%= rs[i].Music_Type %></td>
+        <td><%= rs[i].Difficulty %></td>
+        <td><%= rs[i].Description%></td>
+    </tr>
+    <% } %>
+</table>
+
+<% include footer %>

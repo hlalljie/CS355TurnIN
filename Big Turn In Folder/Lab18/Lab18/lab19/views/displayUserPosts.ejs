@@ -1,0 +1,13 @@
+<% include header %>
+
+    <table id="login">
+        <tr><td>User Name: </td>
+            <td><%= rs[0].User_Name %></td>
+
+        <tr><th>Posts</th></tr>
+        <% for (var i=0; rs.length > i; i++) { %>
+            <tr><td><%= rs[i].Post %></td></tr>
+
+        <% } %>
+    </table>
+<% include footer %>

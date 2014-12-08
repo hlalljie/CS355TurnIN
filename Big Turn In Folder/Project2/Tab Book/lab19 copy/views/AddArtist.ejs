@@ -1,0 +1,26 @@
+<% include header %>
+
+<form method="POST" action="/tabbook/Add">
+    <table id="login">
+        <tr><td>Artist Name:</td>
+            <!-- name attribute must be provided for non ajax forms -->
+            <td><input type="text" id="Artist_Name" name="Artist_Name" /></td>
+        </tr>
+        <tr><td>Rating</td>
+            <!-- name attribute must be provided for non ajax forms -->
+            <td><input type="text" id="Rating" name="Rating" /></td>
+        </tr>
+        <tr><td>Biography:</td>
+            <td><input type="Biography" id="Biography" name="Biography" /></td>
+        </tr>
+        <tr><td>Members:</td>
+            <td><input type="Members" id="Members" name="Members" /></td>
+        </tr>
+        <tr><td>Years:</td>
+            <td><input type="Years" id="Years" name="Years" /></td>
+        </tr>
+    </table>
+    <input type="submit">
+</form>
+
+<% include footer %>
